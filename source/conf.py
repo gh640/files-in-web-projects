@@ -92,6 +92,12 @@ html_theme = 'alabaster'
 html_theme_options = {
     'font_family': '"SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif',
     'head_font_family': '"SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    'github_user': 'gh640',
+    'github_repo': 'files-in-web-projects',
+    'github_button': False,
+    'github_banner': True,
+    'canonical_url': 'https://gh640.github.io/files-in-web-projects',
+    'show_related': True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -107,8 +113,8 @@ html_static_path = ['_static']
 html_sidebars = {
     '**': [
         'about.html',
-        'relations.html',  # needs 'show_related': True theme option to display
         'searchbox.html',
+        'relations.html',  # needs 'show_related': True theme option to display
         'navigation.html',
     ]
 }
