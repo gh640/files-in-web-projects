@@ -1,0 +1,11 @@
+msgid "Related Topics"
+msgstr "関連トピック"
+
+msgid "Documentation overview"
+msgstr "概要"
+
+msgid "Next"
+msgstr "次"
+
+msgid "Previous"
+msgstr "前"

@@ -1,3 +1,6 @@
 Pipfile.lock
 build/
 docs/.buildinfo
+
+# 翻訳の .mo ファイルを除外
+source/locales/ja/LC_MESSAGES/*.mo
