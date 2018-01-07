@@ -1,0 +1,34 @@
+From c3a4cae3b18e2a9137569b4d86bef0ad7e7b1ef8 Mon Sep 17 00:00:00 2001
+From: bitfidus <bitfidus@gmail.com>
+Date: Thu, 1 Jun 2017 17:42:05 +0200
+Subject: [PATCH] Localization
+
+---
+ alabaster/relations.html | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/alabaster/relations.html b/alabaster/relations.html
+index 770446c..b65b337 100644
+--- a/alabaster/relations.html
++++ b/alabaster/relations.html
+@@ -1,16 +1,16 @@
+ <div class="relations">
+-<h3>Related Topics</h3>
++<h3>{{ _('Related Topics') }}</h3>
+ <ul>
+-  <li><a href="{{ pathto(master_doc) }}">Documentation overview</a><ul>
++  <li><a href="{{ pathto(master_doc) }}">{{ _('Documentation overview') }}</a><ul>
+   {%- for parent in parents %}
+   <li><a href="{{ parent.link|e }}">{{ parent.title }}</a><ul>
+   {%- endfor %}
+     {%- if prev %}
+-      <li>Previous: <a href="{{ prev.link|e }}" title="{{ _('previous chapter')
++      <li>{{ _('Previous') }}: <a href="{{ prev.link|e }}" title="{{ _('previous chapter')
+         }}">{{ prev.title }}</a></li>
+     {%- endif %}
+     {%- if next %}
+-      <li>Next: <a href="{{ next.link|e }}" title="{{ _('next chapter')
++      <li>{{ _('Next') }}: <a href="{{ next.link|e }}" title="{{ _('next chapter')
+         }}">{{ next.title }}</a></li>
+     {%- endif %}
+   {%- for parent in parents %}

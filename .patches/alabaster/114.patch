@@ -1,0 +1,67 @@
+From 82ccb89160a688051d9f89dffc44ffb7f5fcd3a7 Mon Sep 17 00:00:00 2001
+From: TitanSnow <sweeto@live.cn>
+Date: Fri, 22 Sep 2017 19:51:55 +0800
+Subject: [PATCH 1/2] ensure search input bar and button in one line
+
+The quick search bar and button in sidebar is
+splited in two lines which looks not so nice.
+This commit make them in one line.
+---
+ alabaster/static/alabaster.css_t | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/alabaster/static/alabaster.css_t b/alabaster/static/alabaster.css_t
+index 3964f98..59e75fc 100644
+--- a/alabaster/static/alabaster.css_t
++++ b/alabaster/static/alabaster.css_t
+@@ -207,6 +207,10 @@ div.sphinxsidebar input {
+     font-size: 1em;
+ }
+ 
++div.sphinxsidebar .search > div {
++    display: table-cell;
++}
++
+ div.sphinxsidebar hr {
+     border: none;
+     height: 1px;
+
+From 3c9a9779ca402142ca059c18ff41f74c854417ec Mon Sep 17 00:00:00 2001
+From: TitanSnow <sweeto@live.cn>
+Date: Sat, 23 Sep 2017 07:52:04 +0800
+Subject: [PATCH 2/2] add scrollbar for fixed sidebar if it's height is bigger
+ than page height
+
+For fixed sidebar, the content out of page will not able to show.
+Add a scrollbar for this situation so that users can scroll down and see that content.
+---
+ alabaster/static/alabaster.css_t | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/alabaster/static/alabaster.css_t b/alabaster/static/alabaster.css_t
+index 59e75fc..231206f 100644
+--- a/alabaster/static/alabaster.css_t
++++ b/alabaster/static/alabaster.css_t
+@@ -121,6 +121,11 @@ div.relations {
+ }
+ {% endif %}
+ 
++div.sphinxsidebar {
++    max-height: 100%;
++    overflow-y: auto;
++}
++
+ div.sphinxsidebar a {
+     color: {{ theme_sidebar_link }};
+     text-decoration: none;
+@@ -207,6 +212,10 @@ div.sphinxsidebar input {
+     font-size: 1em;
+ }
+ 
++div.sphinxsidebar #searchbox input[type="text"] {
++    width: 160px;
++}
++
+ div.sphinxsidebar .search > div {
+     display: table-cell;
+ }
