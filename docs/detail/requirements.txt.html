@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>.htaccess &#8212; ウェブ開発ファイル辞典 0.1.1 ドキュメント</title>
+    <title>requirements.txt &#8212; ウェブ開発ファイル辞典 0.1.1 ドキュメント</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,13 +24,12 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="composer.json" href="composer.json.html" />
-    <link rel="prev" title=".hgignore" href="hgignore.html" />
+    <link rel="prev" title="package-lock.json" href="package-lock.json.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://gh640.github.io/files-in-web-projectsdetail/htaccess.html"/>
+    <link rel="canonical" href="https://gh640.github.io/files-in-web-projectsdetail/requirements.txt.html"/>
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -43,9 +42,10 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="htaccess">
-<h1><code class="docutils literal"><span class="pre">.htaccess</span></code><a class="headerlink" href="#htaccess" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p><code class="docutils literal"><span class="pre">.htaccess</span></code> は、 <a class="reference external" href="https://httpd.apache.org/">Apache httpd サーバー</a> でディレクトリ単位の設定を格納するための設定ファイルです。</p>
+  <div class="section" id="requirements-txt">
+<h1><code class="docutils literal"><span class="pre">requirements.txt</span></code><a class="headerlink" href="#requirements-txt" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">requirements.txt</span></code> は、 Python のパッケージマネージャである <a class="reference external" href="https://pip.pypa.io">pip</a> 用のパッケージ情報を記述したファイルです。</p>
+<p>pip の仕組み上 <code class="docutils literal"><span class="pre">requirements.txt</span></code> という名前にしないといけない制約はありませんが、 <a class="reference external" href="https://pip.pypa.io/en/stable/user_guide/?highlight=requirements.txt#requirements-files">pip 公式のサンプルでこのファイル名が使われており</a> 、実際にも多くの Python プロジェクトが <code class="docutils literal"><span class="pre">requirements.txt</span></code> というファイルに依存パッケージ情報を記述しています。</p>
 </div>
 
 
@@ -79,8 +79,7 @@
 <h3>関連トピック</h3>
 <ul>
   <li><a href="../index.html">概要</a><ul>
-      <li>前: <a href="hgignore.html" title="前の章へ"><code class="docutils literal"><span class="pre">.hgignore</span></code></a></li>
-      <li>次: <a href="composer.json.html" title="次の章へ"><code class="docutils literal"><span class="pre">composer.json</span></code></a></li>
+      <li>前: <a href="package-lock.json.html" title="前の章へ"><code class="docutils literal"><span class="pre">package-lock.json</span></code></a></li>
   </ul></li>
 </ul>
 </div><h3>ナビゲーション</h3>
@@ -94,7 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="gitattributes.html"><code class="docutils literal"><span class="pre">.gitattributes</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="gitignore.html"><code class="docutils literal"><span class="pre">.gitignore</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="hgignore.html"><code class="docutils literal"><span class="pre">.hgignore</span></code></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="composer.json.html"><code class="docutils literal"><span class="pre">composer.json</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="composer.lock.html"><code class="docutils literal"><span class="pre">composer.lock</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="config.rb.html"><code class="docutils literal"><span class="pre">config.rb</span></code></a></li>
@@ -105,7 +104,7 @@
 <li class="toctree-l1"><a class="reference internal" href="node_modules.html"><code class="docutils literal"><span class="pre">node_modules/</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="package.json.html"><code class="docutils literal"><span class="pre">package.json</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="package-lock.json.html"><code class="docutils literal"><span class="pre">package-lock.json</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="requirements.txt.html"><code class="docutils literal"><span class="pre">requirements.txt</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal"><span class="pre">requirements.txt</span></code></a></li>
 </ul>
 
 
@@ -121,7 +120,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../_sources/detail/htaccess.rst.txt"
+      <a href="../_sources/detail/requirements.txt.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

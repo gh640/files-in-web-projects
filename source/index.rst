@@ -34,3 +34,4 @@
    detail/node_modules
    detail/package.json
    detail/package-lock.json
+   detail/requirements.txt
