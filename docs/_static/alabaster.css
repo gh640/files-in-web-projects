@@ -116,10 +116,11 @@ p.caption {
 }
 
 
-div.relations {
-    display: none;
-}
 
+div.sphinxsidebar {
+    max-height: 100%;
+    overflow-y: auto;
+}
 
 div.sphinxsidebar a {
     color: #444;
@@ -205,6 +206,14 @@ div.sphinxsidebar input {
     border: 1px solid #CCC;
     font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 160px;
+}
+
+div.sphinxsidebar .search > div {
+    display: table-cell;
 }
 
 div.sphinxsidebar hr {
