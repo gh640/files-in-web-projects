@@ -41,3 +41,4 @@
    detail/robots.txt
    detail/tslint.json
    detail/web.config
+   detail/webpack.config.js
