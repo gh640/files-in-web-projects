@@ -25,6 +25,7 @@
    detail/hgignore
    detail/htaccess
    detail/stylelintrc
+   detail/browserconfig.xml
    detail/composer.json
    detail/composer.lock
    detail/config.rb
