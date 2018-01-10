@@ -40,3 +40,4 @@
    detail/requirements.txt
    detail/robots.txt
    detail/tslint.json
+   detail/web.config
