@@ -24,9 +24,11 @@
    detail/gitignore
    detail/hgignore
    detail/htaccess
+   detail/stylelintrc
    detail/composer.json
    detail/composer.lock
    detail/config.rb
+   detail/favicon.ico
    detail/Gemfile
    detail/Gemfile.lock
    detail/Gruntfile.js
@@ -35,3 +37,5 @@
    detail/package.json
    detail/package-lock.json
    detail/requirements.txt
+   detail/robots.txt
+   detail/tslint.json
