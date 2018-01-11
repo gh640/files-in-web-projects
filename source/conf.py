@@ -98,6 +98,7 @@ html_theme_options = {
     'github_banner': True,
     'canonical_url': 'https://gh640.github.io/files-in-web-projects',
     'show_related': True,
+    'analytics_id': 'UA-10023034-14',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
