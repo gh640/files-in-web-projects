@@ -99,6 +99,7 @@ html_theme_options = {
     'canonical_url': 'https://gh640.github.io/files-in-web-projects',
     'show_related': True,
     'analytics_id': 'UA-10023034-14',
+    'description': 'ウェブ開発のプロジェクトでよく使われるファイルのコレクションです。',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
