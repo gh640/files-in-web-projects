@@ -54,6 +54,19 @@ $ pipenv shell
 virtual environment を activate しておくことで、以降のステップ 3 で `make github` コマンドが使用できます。
 virtual environment から脱出したい場合は、 `exit` コマンドを打つと元の環境に戻ることができます。
 
+続けて、サイドバーが翻訳できない問題等を解決するために Alabaster テーマにパッチをあてます。
+
+```bash
+for file in $(find .patches/alabaster -name *.patch); do
+  patch -p1 -d "$(python -c $'import sysconfig; print(sysconfig.get_path(\'purelib\'))')" < $file;
+done
+```
+
+ここで、 `$(find .patches/alabaster -name *.patch)` は `.patches/alabaster` 以下にあるすべての `.patch` ファイルのパスを返します。
+
+`$(python -c $'import sysconfig; print(sysconfig.get_path(\'purelib\'))')` は activate された Pipenv の virtual environment の `site-packages` （ライブラリ）のパスを返します。
+これは例えば `/Users/[ユーザ名]/.virtualenvs/files-in-web-projects-NhVIdrmB/lib/python3.6/site-packages` というようなパスになります。
+
 ### 2. ファイルを編集する
 
 対象のファイルを編集します。
