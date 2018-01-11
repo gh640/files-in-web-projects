@@ -37,6 +37,7 @@
    detail/node_modules
    detail/package.json
    detail/package-lock.json
+   detail/php.ini
    detail/requirements.txt
    detail/robots.txt
    detail/tslint.json
