@@ -26,6 +26,7 @@
    detail/htaccess
    detail/stylelintrc
    detail/well-known
+   detail/apple-touch-icon.png
    detail/browserconfig.xml
    detail/composer.json
    detail/composer.lock
