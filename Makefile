@@ -12,6 +12,13 @@ BUILDDIR      = build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+.PHONY: patch
+
+patch:
+	for file in $$(find .patches -type f -name *.patch); do \
+		patch -p1 -d "$$(python -c $$'import sysconfig; print(sysconfig.get_path(\'purelib\'))')" < $$file || exit 1; \
+	done
+
 .PHONY: github
 
 github:
